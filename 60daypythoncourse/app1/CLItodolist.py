@@ -25,6 +25,7 @@ while True:
 
     
         todolist = functions.get_todos()
+        
 
         #new_todos = []
         #for item in todolist:
