@@ -1,6 +1,6 @@
-make soup
-go out to dinner
 walk my turtles
-get out of mexico for life 
 clean the program
 not final
+clean the program
+finish the course
+add exit button
