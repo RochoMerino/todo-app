@@ -11,14 +11,21 @@ button = sg.Button("Convert")
 
 output_label = sg.Text(key="answer", text_color="Red")
 
+exit_button = sg.Button("Exit")
+
 window = sg.Window("Convertor", layout=[[text1, input1],
                                         [text2, input2],
-                                        [button, output_label]])
-
+                                        [button, output_label, exit_button]])
 
 while True:
     event, value = window.read()
     print(event, value)
+
+    match event:
+        case "Exit":
+            break
+        case sg.WIN_CLOSED:
+            break
 
     feet = float(value["feet"])
     inches = float(value["inches"])
@@ -26,7 +33,6 @@ while True:
     answer = convert_to_cm(feet, inches)
 
     window["answer"].update(value=f"{answer} cm")
-
 
 
 window.close()

@@ -1,5 +1,5 @@
 
-FILEPATH = r"C:\Users\rocho\OneDrive\Escritorio\P\todo.txt" # r = raw string
+FILEPATH = "todo.txt"  # r = raw string
 
 
 def get_todos(filepath = FILEPATH):
